@@ -1,6 +1,6 @@
 import ETHIcon from "./media/tokens/eth.svg";
 import WETHIcon from "./media/tokens/weth.svg";
-import DAIIcon from "./media/tokens/dai.png";
+import PYROIcon from "./media/Icons/gift.svg";
 
 export type TokenConfig = {
   address: string;
@@ -50,7 +50,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           address: "0xe116a4cf94754856586d19e3eb741c09ceaa81de",
           name: "Pyros",
           symbol: "PYRO",
-          imageUri: DAIIcon,
+          imageUri: PYROIcon,
           resourceId:
             "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
         },
@@ -78,7 +78,8 @@ export const chainbridgeConfig: ChainbridgeConfig = {
       name: "Fuji",
       bridgeAddress: "0xe3aDD2c1Ab996cfd1A6186DA47a9D330350C62FF",
       erc20HandlerAddress: "0x597483123A7A9c2Fe9e25c51500b9Bc0b4679b86",
-      rpcUrl: "https://avalanche--fuji--rpc.datahub.figment.io/apikey/c863bd667354ebe021eaaf5f8908f8ef/ext/bc/C/rpc",
+      rpcUrl:
+        "https://avalanche--fuji--rpc.datahub.figment.io/apikey/c863bd667354ebe021eaaf5f8908f8ef/ext/bc/C/rpc",
       type: "Ethereum",
       blockExplorer: "https://cchain.explorer.avax-test.network/tx",
       nativeTokenSymbol: "AVAX",
@@ -88,7 +89,7 @@ export const chainbridgeConfig: ChainbridgeConfig = {
           address: "0x23A9FD05ef0c5fb9dDE964C4d4191A169Fd221f8",
           name: "wrapped ETC",
           symbol: "xPYRO",
-          imageUri: DAIIcon,
+          imageUri: PYROIcon,
           resourceId:
             "0x0000000000000000000000e116a4cf94754856586d19e3eb741c09ceaa81de01",
           isNativeWrappedToken: true,
@@ -154,4 +155,3 @@ export const chainbridgeConfig: ChainbridgeConfig = {
   // },
   // ]
 };
-

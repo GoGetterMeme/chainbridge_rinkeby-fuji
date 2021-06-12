@@ -5,6 +5,7 @@ import { Typography } from "@chainsafe/common-components";
 import { shortenAddress } from "../Utils/Helpers";
 import { useWeb3 } from "@chainsafe/web3-context";
 import { useChainbridge } from "../Contexts/ChainbridgeContext";
+import Bar from "../Components/Bar";
 
 const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) => {
   return createStyles({
@@ -69,7 +70,8 @@ const AppHeader: React.FC<IAppHeader> = () => {
         {/* <div className={classes.logo}>
         
         </div> */}
-        <Typography variant="h4">ChainBridge Token Swap</Typography>
+        <Bar>Yeti Bridge</Bar>
+        {/* <Typography variant="h4">ChainBridge Token Swap</Typography> */}
       </div>
       <section className={classes.state}>
         {!isReady ? (
