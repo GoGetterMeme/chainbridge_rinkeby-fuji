@@ -70,8 +70,8 @@ const AppHeader: React.FC<IAppHeader> = () => {
         {/* <div className={classes.logo}>
         
         </div> */}
-        <Bar>Yeti Bridge</Bar>
-        {/* <Typography variant="h4">ChainBridge Token Swap</Typography> */}
+        {/* <Bar>Yeti Bridge</Bar> */}
+        <Typography variant="h4">Yeti Token Bridge</Typography>
       </div>
       <section className={classes.state}>
         {!isReady ? (
