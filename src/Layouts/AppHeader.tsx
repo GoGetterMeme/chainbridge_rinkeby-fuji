@@ -5,6 +5,7 @@ import { Typography } from "@chainsafe/common-components";
 import { shortenAddress } from "../Utils/Helpers";
 import { useWeb3 } from "@chainsafe/web3-context";
 import { useChainbridge } from "../Contexts/ChainbridgeContext";
+import Bar from "../Components/Bar";
 
 const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) => {
   return createStyles({
@@ -20,26 +21,26 @@ const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) => {
       borderBottom: `1px solid ${palette.additional["header"][3]}`,
       color: palette.additional["header"][2],
       alignItems: "center",
-      zIndex: zIndex?.layer2,
+      zIndex: zIndex?.layer2
     },
     left: {
       display: "flex",
       flexDirection: "row",
       justifyContent: "flex-start",
-      alignItems: "center",
+      alignItems: "center"
     },
     logo: {
       height: constants.generalUnit * 5,
       width: constants.generalUnit * 5,
       "& svg, & img": {
         maxHeight: "100%",
-        maxWidth: "100%",
-      },
+        maxWidth: "100%"
+      }
     },
     state: {
       display: "flex",
       flexDirection: "row",
-      alignItems: "center",
+      alignItems: "center"
     },
     indicator: {
       display: "block",
@@ -47,12 +48,12 @@ const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) => {
       width: 10,
       borderRadius: "50%",
       backgroundColor: palette.additional["green"][6],
-      marginRight: constants.generalUnit,
+      marginRight: constants.generalUnit
     },
     address: {
-      marginRight: constants.generalUnit,
+      marginRight: constants.generalUnit
     },
-    network: {},
+    network: {}
   });
 });
 
@@ -66,10 +67,8 @@ const AppHeader: React.FC<IAppHeader> = () => {
     <header className={clsx(classes.root)}>
       <div className={classes.left}>
         {/* ADD LOGO HERE */}
-        {/* <div className={classes.logo}>
-        
-        </div> */}
-        <Typography variant="h4">ChainBridge Token Swap</Typography>
+        <Bar>YetiBridge</Bar>
+        {/* <Typography variant="h4">ChainBridge Token Swap</Typography> */}
       </div>
       <section className={classes.state}>
         {!isReady ? (
